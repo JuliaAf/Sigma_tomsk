@@ -1,0 +1,42 @@
+.header {
+  padding: 20px 0;
+  & .wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  &__logo {
+    flex-basis: 15%;
+
+    border-right: 1px solid @lightTextColor;
+  }
+  &__contacts {
+    display: flex;
+    flex-basis: 35%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 30px;
+
+    line-height: 55px;
+
+    border-right: 1px solid @lightTextColor;
+  }
+  &__nav {
+    flex-basis: 50%;
+    padding-left: 30px;
+
+    text-align: center;
+  }
+  &__nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    text-transform: uppercase;
+  }
+  &__nav a.active {
+    color: @corpColor;
+  }
+}

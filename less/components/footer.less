@@ -1,0 +1,29 @@
+.footer {
+  padding: 20px 0;
+  & .wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  &__copy,
+  &__contacts,
+  &__developer {
+    flex-basis: 33.33%;
+    padding: 20px 0;
+
+    text-align: center;
+  }
+  &__copy,
+  &__contacts {
+    border-right: 1px solid @lightTextColor;
+  }
+  &__contacts {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 30px;
+  }
+}

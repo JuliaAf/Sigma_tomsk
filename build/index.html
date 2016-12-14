@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Tomsk Nanocenter - Главная</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="arrows-icon" viewBox="0 0 54 54"><title>Shape 13</title><path d="M52.553 54L37.031 38.478l-4.172 4.172-3.599-13.36 13.357 3.6-4.175 4.175L53.967 52.59zM16.074 17.521L.553 2 1.967.59l15.52 15.52 4.173-4.17 3.6 13.35-13.358-3.6zm20.961-1.413L52.553.59 53.967 2l-15.52 15.52 4.168 4.17-13.355 3.6 3.599-13.36zM1.967 54L.553 52.59l15.525-15.525-4.174-4.175 13.356-3.6-3.6 13.36-4.17-4.172z" fill="#fff"/><path d="M52.553 54L37.031 38.478l-4.172 4.172-3.599-13.36 13.357 3.6-4.175 4.175L53.967 52.59zM16.074 17.521L.553 2 1.967.59l15.52 15.52 4.173-4.17 3.6 13.35-13.358-3.6zm20.961-1.413L52.553.59 53.967 2l-15.52 15.52 4.168 4.17-13.355 3.6 3.599-13.36zM1.967 54L.553 52.59l15.525-15.525-4.174-4.175 13.356-3.6-3.6 13.36-4.17-4.172z" fill="#5bb154"/></symbol><symbol id="graph-icon" viewBox="0 0 49 54"><title>Shape 261</title><path d="M4.967 6a4 4 0 0 0-4 4v30a4 4 0 0 0 4 4h40a4 4 0 0 0 4-4V10a4 4 0 0 0-4-4zm42 4v30c0 1.1-.899 2-2 2h-40c-1.102 0-2-.9-2-2V10c0-1.1.898-2 2-2h40c1.101 0 2 .9 2 2zM49 48v-2H1v2h5.967l-2 6h2l2-6h32l2 6h2l-2-6zM22.967 12c-1.106 0-2 .89-2 2v22c0 1.1.894 2 2 2h4c1.105 0 2-.9 2-2V14c0-1.11-.895-2-2-2zm4 24h-4V14h4zm-14-8c-1.106 0-2 .89-2 2v6c0 1.1.894 2 2 2h4c1.105 0 2-.9 2-2v-6c0-1.11-.895-2-2-2zm8-24h8l-4-4zm-4 32h-4v-6h4zm16-16c-1.106 0-2 .89-2 2v14c0 1.1.894 2 2 2h4c1.105 0 2-.9 2-2V22c0-1.11-.895-2-2-2zm4 16h-4V22h4z" fill="#fff"/><path d="M4.967 6a4 4 0 0 0-4 4v30a4 4 0 0 0 4 4h40a4 4 0 0 0 4-4V10a4 4 0 0 0-4-4zm42 4v30c0 1.1-.899 2-2 2h-40c-1.102 0-2-.9-2-2V10c0-1.1.898-2 2-2h40c1.101 0 2 .9 2 2zM49 48v-2H1v2h5.967l-2 6h2l2-6h32l2 6h2l-2-6zM22.967 12c-1.106 0-2 .89-2 2v22c0 1.1.894 2 2 2h4c1.105 0 2-.9 2-2V14c0-1.11-.895-2-2-2zm4 24h-4V14h4zm-14-8c-1.106 0-2 .89-2 2v6c0 1.1.894 2 2 2h4c1.105 0 2-.9 2-2v-6c0-1.11-.895-2-2-2zm8-24h8l-4-4zm-4 32h-4v-6h4zm16-16c-1.106 0-2 .89-2 2v14c0 1.1.894 2 2 2h4c1.105 0 2-.9 2-2V22c0-1.11-.895-2-2-2zm4 16h-4V22h4z" fill="#5bb154"/></symbol><symbol id="molecula-icon" viewBox="0 0 51 52"><title>Shape 111</title><path d="M.967 28a8 8 0 0 0 8 8 7.985 7.985 0 0 0 6.237-2.99l12.476 7.682A7.973 7.973 0 0 0 26.967 44a8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8 7.985 7.985 0 0 0-6.234 2.985l-12.48-7.675a7.973 7.973 0 0 0 .714-3.31 7.975 7.975 0 0 0-.651-3.167L36.63 12.884A8 8 0 0 0 50.967 8a8 8 0 0 0-8-8 8 8 0 0 0-8 8c0 1.124.232 2.194.65 3.164l-20.315 11.95A8 8 0 0 0 .967 28zm8-6c3.308 0 6 2.69 6 6s-2.692 6-6 6c-3.309 0-6-2.69-6-6s2.691-6 6-6c3.308 0 0 0 0 0zm34-20c3.308 0 6 2.69 6 6s-2.692 6-6 6c-3.309 0-6-2.69-6-6s2.691-6 6-6c3.308 0 0 0 0 0zm-8 36c3.308 0 6 2.69 6 6s-2.692 6-6 6c-3.309 0-6-2.69-6-6s2.691-6 6-6c3.308 0 0 0 0 0z" fill="#fff"/><path d="M.967 28a8 8 0 0 0 8 8 7.985 7.985 0 0 0 6.237-2.99l12.476 7.682A7.973 7.973 0 0 0 26.967 44a8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8 7.985 7.985 0 0 0-6.234 2.985l-12.48-7.675a7.973 7.973 0 0 0 .714-3.31 7.975 7.975 0 0 0-.651-3.167L36.63 12.884A8 8 0 0 0 50.967 8a8 8 0 0 0-8-8 8 8 0 0 0-8 8c0 1.124.232 2.194.65 3.164l-20.315 11.95A8 8 0 0 0 .967 28zm8-6c3.308 0 6 2.69 6 6s-2.692 6-6 6c-3.309 0-6-2.69-6-6s2.691-6 6-6c3.308 0 0 0 0 0zm34-20c3.308 0 6 2.69 6 6s-2.692 6-6 6c-3.309 0-6-2.69-6-6s2.691-6 6-6c3.308 0 0 0 0 0zm-8 36c3.308 0 6 2.69 6 6s-2.692 6-6 6c-3.309 0-6-2.69-6-6s2.691-6 6-6c3.308 0 0 0 0 0z" fill="#5bb154"/></symbol><symbol id="search-icon" viewBox="0 0 49 48"><title>Shape 11</title><path d="M48.203 44.76L34.58 31.14A18.91 18.91 0 0 0 38.967 19c0-10.49-8.506-19-19-19-10.492 0-19 8.51-19 19s8.508 19 19 19c4.617 0 8.846-1.65 12.138-4.39l13.624 13.63zM2.967 19c0-9.38 7.625-17 17-17 9.373 0 17 7.62 17 17 0 9.37-7.627 17-17 17-9.375 0-17-7.63-17-17z" fill="#fff"/><path d="M48.203 44.76L34.58 31.14A18.91 18.91 0 0 0 38.967 19c0-10.49-8.506-19-19-19-10.492 0-19 8.51-19 19s8.508 19 19 19c4.617 0 8.846-1.65 12.138-4.39l13.624 13.63zM2.967 19c0-9.38 7.625-17 17-17 9.373 0 17 7.62 17 17 0 9.37-7.627 17-17 17-9.375 0-17-7.63-17-17z" fill="#5bb154"/></symbol><symbol id="tablet-icon" viewBox="0 0 49 56"><title>Shape 141</title><path d="M18.967 6v2c-3.582 1.73-6 4.3-6 8h24c0-3.7-2.418-6.27-6-8V6c0-3.32-2.688-6-6-6-3.313 0-6 2.68-6 6zm6-4a4 4 0 0 1 4 4v3.26l1.13.54c2.382 1.15 3.874 2.53 4.51 4.2H15.326c.637-1.67 2.129-3.05 4.51-4.2l1.131-.54V6a4 4 0 0 1 4-4c2.207 0 0 0 0 0zM37 26v-2H13v2zm0 8v-2H13v2zm-8 8v-2H13v2zM22.967 6c0 1.1.894 2 2 2 1.105 0 2-.9 2-2 0-1.11-.895-2-2-2-1.106 0-2 .89-2 2zm22-2h-12l1.334 2h10.666c1.101 0 2 .9 2 2v44c0 1.1-.899 2-2 2h-40c-1.102 0-2-.9-2-2V8c0-1.1.898-2 2-2h10.666l1.334-2h-12a4 4 0 0 0-4 4v44a4 4 0 0 0 4 4h40a4 4 0 0 0 4-4V8a4 4 0 0 0-4-4z" fill="#fff"/><path d="M18.967 6v2c-3.582 1.73-6 4.3-6 8h24c0-3.7-2.418-6.27-6-8V6c0-3.32-2.688-6-6-6-3.313 0-6 2.68-6 6zm6-4a4 4 0 0 1 4 4v3.26l1.13.54c2.382 1.15 3.874 2.53 4.51 4.2H15.326c.637-1.67 2.129-3.05 4.51-4.2l1.131-.54V6a4 4 0 0 1 4-4c2.207 0 0 0 0 0zM37 26v-2H13v2zm0 8v-2H13v2zm-8 8v-2H13v2zM22.967 6c0 1.1.894 2 2 2 1.105 0 2-.9 2-2 0-1.11-.895-2-2-2-1.106 0-2 .89-2 2zm22-2h-12l1.334 2h10.666c1.101 0 2 .9 2 2v44c0 1.1-.899 2-2 2h-40c-1.102 0-2-.9-2-2V8c0-1.1.898-2 2-2h10.666l1.334-2h-12a4 4 0 0 0-4 4v44a4 4 0 0 0 4 4h40a4 4 0 0 0 4-4V8a4 4 0 0 0-4-4z" fill="#5bb154"/></symbol>
+  </svg>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="SigmaTomskLogo">
+        </a>
+      </div>
+      <div class="header__contacts">
+        <a href="mailto:info@sigma-tomsk.ru">info@sigma-tomsk.ru</a>
+        <a href="tel:+74950000000">+7 (495) 000 00 00</a>
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="#" class="active">главная</a></li>
+          <li><a href="#">о наноцентре</a></li>
+          <li><a href="#">новости</a></li>
+          <li><a href="#">проекты</a></li>
+          <li><a href="#">контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="index-carousel">
+    <img src="img/index-main-bg.jpg">
+    <img src="img/index-main-bg.jpg">
+    <img src="img/index-main-bg.jpg">
+  </div>
+  <section class="aims">
+    <div class="wrapper">
+      <h2 class="aims__title">СОЗДАНИЕ <span>ТЕХНОЛОГИЧЕСКИХ ПЛАТФОРМ</span></h2>
+      <span class="aims__intro">
+        Цель – формирование технологических платформ на основе базовой технологии запуск на ее основе пула стартапов с прикладными решениями и продуктами.
+      </span>
+      <ul class="aims__list">
+        <li>
+          <svg>
+            <use xlink:href="#search-icon"></use>
+          </svg>
+          <p>Поиск технологических ниш, перспективных базовых технологий.</p>
+        </li>
+        <li>
+          <svg>
+            <use xlink:href="#graph-icon"></use>
+          </svg>
+          <p>Анализ рынка с точки зрения новых сфер применения, изменения существующих техпроцессов, создания новых нишевых продуктов</p>
+        </li>
+        <li>
+          <svg>
+            <use xlink:href="#arrows-icon"></use>
+          </svg>
+          <p>Сборка стартапов на базе технологической платформы</p>
+        </li>
+        <li>
+          <svg>
+            <use xlink:href="#tablet-icon"></use>
+          </svg>
+          <p>Обеспечение обратной связи с рынком по продуктам и технологиям, экспертиза, постановка техзадания на НИОКР с учетом требований рынка.</p>
+        </li>
+        <li>
+          <svg>
+            <use xlink:href="#molecula-icon"></use>
+          </svg>
+          <p>Использование кооперационных связей и компетенций других наноцентров для обеспечения синергетического эффекта, снижения затрат на реализацию проекта</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="projects">
+    <div class="wrapper">
+      <h3 class="projects__title">наши <span>проекты</span></h3>
+      <div class="button">
+        <div class="button__left-green"></div>
+        <div class="button__right-green"></div>
+        <div class="button__left-grey"></div>
+        <div class="button__right-grey"></div>
+        <a href="#">Смотреть все</a>
+      </div>
+    </div>
+    <div class="projects-wrap">
+      <div class="projects__list">
+        <div class="projects__item active">
+          <div class="projects__item-img">
+            <img src="img/index-project.jpg" alt="">
+          </div>
+          <div class="projects__item-desc">
+            <span>Направление</span>
+            <h3>Передовые пучковые технологии 1</h3>
+            <p>Описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта</p>
+            <div class="button-more projects__button-more">
+              <div class="button-more__hor"></div>
+              <div class="button-more__vert"></div>
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__item">
+          <div class="project__item-img">
+            <img src="img/index-project.jpg" alt="">
+          </div>
+          <div class="projects__item-desc">
+            <span>Направление</span>
+            <h3>Передовые пучковые технологии 2</h3>
+            <p>Описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта</p>
+            <div class="button-more projects__button-more">
+              <div class="button-more__hor"></div>
+              <div class="button-more__vert"></div>
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__item">
+          <div class="projects__item-img">
+            <img src="img/index-project.jpg" alt="">
+          </div>
+          <div class="projects__item-desc">
+            <span>Направление</span>
+            <h3>Передовые пучковые технологии 3</h3>
+            <p>Описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта</p>
+            <div class="button-more projects__button-more">
+              <div class="button-more__hor"></div>
+              <div class="button-more__vert"></div>
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__item">
+          <div class="projects__item-img">
+            <img src="img/index-project.jpg" alt="">
+          </div>
+          <div class="projects__item-desc">
+            <span>Направление</span>
+            <h3>Передовые пучковые технологии 4</h3>
+            <p>Описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта</p>
+            <a class="button-more" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="projects__item">
+          <div class="projects__item-img">
+            <img src="img/index-project.jpg" alt="">
+          </div>
+          <div class="projects__item-desc">
+            <span>Направление</span>
+            <h3>Передовые пучковые технологии 5</h3>
+            <p>Описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта</p>
+            <div class="button-more projects__button-more">
+              <div class="button-more__hor"></div>
+              <div class="button-more__vert"></div>
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__item">
+          <div class="projects__item-img">
+            <img src="img/index-project.jpg" alt="">
+          </div>
+          <div class="projects__item-desc">
+            <span>Направление</span>
+            <h3>Передовые пучковые технологии 6</h3>
+            <p>Описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта</p>
+            <div class="button-more projects__button-more">
+              <div class="button-more__hor"></div>
+              <div class="button-more__vert"></div>
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__item">
+          <div class="projects__item-img">
+            <img src="img/index-project.jpg" alt="">
+          </div>
+          <div class="projects__item-desc">
+            <span>Направление</span>
+            <h3>Передовые пучковые технологии 7</h3>
+            <p>Описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта описание проекта</p>
+            <div class="button-more projects__button-more">
+              <div class="button-more__hor"></div>
+              <div class="button-more__vert"></div>
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projects__nav">
+        <div class="projects__nav-toggle active"></div>
+        <div class="projects__nav-toggle"></div>
+        <div class="projects__nav-toggle"></div>
+        <div class="projects__nav-toggle"></div>
+        <div class="projects__nav-toggle"></div>
+        <div class="projects__nav-toggle"></div>
+        <div class="projects__nav-toggle"></div>
+      </div>
+    </div>
+  </section>
+  <section class="news">
+    <div class="wrapper">
+      <div class="button news__button-all">
+        <div class="button__left-green"></div>
+        <div class="button__right-green"></div>
+        <div class="button__left-grey"></div>
+        <div class="button__right-grey"></div>
+        <a href="#">Смотреть все</a>
+      </div>
+      <h2 class="news__title">новости</h2>
+      <div class="news__list">
+        <article class="news__item">
+          <img src="img/index-new-1.jpg" alt="игровые насадки для детских протезов">
+          <h4>В Томском наноцентре будут выпускать игровые насадки для детских протезов</h4>
+          <span class="news__item-date date">08 декабря 2015</span>
+        </article>
+        <article class="news__item">
+          <img src="img/index-new-2.jpg" alt="РОСНАНО участвует во 2-м Российско-китайском «ЭКСПО»">
+          <h4>РОСНАНО участвует во 2-м Российско-китайском «ЭКСПО»</h4>
+          <span class="news__item-date date">12 октября 2015</span>
+        </article>
+        <article class="news__item">
+          <img src="img/index-new-3.jpg" alt="лазер для строительства судов и самолетов">
+          <h4>В Томске создают «плотный» лазер для строительства судов и самолетов</h4>
+          <span class="news__item-date date">19 июня 2015</span>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="partners">
+    <div class="wrapper">
+      <ul class="partners__list">
+        <li>
+          <a href="#" target="_blank">
+            <img src="img/index-partner-1.png" alt="томский политехнический университет">
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="img/index-partner-2.png" alt="томский государственный унивеситет">
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="img/index-partner-3.png" alt="тусур">
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="img/index-partner-4.png" alt="новохим">
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="img/index-partner-5.png" alt="BI Group">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__copy">
+        Copyright СИГМА.Томск 2016
+      </div>
+      <div class="footer__contacts">
+        <a href="mailto:info@sigma-tomsk.ru">info@sigma-tomsk.ru</a>
+        <a href="tel:+74950000000">+7 (495) 000 00 00</a>
+      </div>
+      <div class="footer__developer">
+        <span>Разработано в</span>
+        <a href="http://ixpert.pro" target="_blank">iXpert</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

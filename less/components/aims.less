@@ -1,0 +1,116 @@
+.aims {
+  position: relative;
+
+  background: url(../img/tomsk-nano-building.jpg);
+  background-repeat: no-repeat;
+  background-position: right 73%;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    top: 10px;
+    left: 0;
+
+    width: 240px;
+    height: 1px;
+
+    background: @lightTextColor;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    width: 295px;
+    height: 100%;
+
+    background: @corpColor;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+  }
+  &__title span {
+    color: @corpColor;
+  }
+  &__intro {
+    display: block;
+    margin-bottom: 75px;
+  }
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 81%;
+  }
+  &__list li {
+    margin-bottom: 90px;
+  }
+  &__list li:nth-child(odd) {
+    flex-basis: 30%;
+    box-sizing: border-box;
+  }
+  &__list li:nth-child(even) {
+    flex-basis: 60%;
+    box-sizing: border-box;
+  }
+  &__list li:last-child {
+    flex-basis: 100%;
+    box-sizing: border-box;
+  }
+  &__list li svg {
+    display: inline-block;
+    flex-basis: 56px !important;
+    width: 56px !important;
+    height: 56px;
+    margin-right: 35px;
+
+    vertical-align: top;
+  }
+  &__list p {
+    position: relative;
+
+    display: inline-block;
+    width: 65%;
+    margin: 0;
+
+    line-height: 24px;
+    vertical-align: middle;
+  }
+  &__list li:nth-child(even) p {
+    width: 80%;
+  }
+  &__list li:last-child p {
+    width: 50%;
+  }
+  &__list p::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -4px;
+
+    display: block;
+
+    font-size: 100px;
+    color: #8a8a8a;
+
+    opacity: 0.1;
+  }
+  &__list li:nth-child(1) p::before {
+    content: "01";
+  }
+  &__list li:nth-child(2) p::before {
+    content: "02";
+  }
+  &__list li:nth-child(3) p::before {
+    content: "03";
+  }
+  &__list li:nth-child(4) p::before {
+    content: "04";
+  }
+  &__list li:nth-child(5) p::before {
+    content: "05";
+  }
+}

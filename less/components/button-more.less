@@ -1,0 +1,79 @@
+.button-more {
+  position: relative;
+
+  display: inline-block;
+  padding: 20px 40px;
+  &__hor,
+  &__vert {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  &__hor::after,
+  &__hor::before,
+  &__vert::after,
+  &__vert::before {
+    transition: 0.5s;
+  }
+  &__hor::after,
+  &__hor::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 1px;
+
+    background: @corpColor;
+  }
+  &__hor::after {
+    top: auto;
+    bottom: 0;
+  }
+  &__vert::after,
+  &__vert::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 1px;
+    height: 100%;
+
+    background: @corpColor;
+  }
+  &__vert::after {
+    right: 0;
+    left: auto;
+
+    transform: translateY(70px);
+  }
+  &__vert::before {
+    transform: translateY(-70px);
+  }
+  &:hover &__vert::after {
+    transform: none;
+  }
+  &:hover &__vert::before {
+    transform: none;
+  }
+  &:hover &__hor::before {
+    transform: translateX(-170px);
+  }
+  &:hover &__hor::after {
+    transform: translateX(170px);
+  }
+  & a {
+    position: relative;
+    z-index: 10;
+
+    color: @corpColor;
+  }
+}

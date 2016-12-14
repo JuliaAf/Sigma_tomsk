@@ -1,0 +1,111 @@
+.button {
+  position: relative;
+
+  width: 102px;
+  padding: 18px 38px;
+
+  &__left-green,
+  &__right-green,
+  &__left-grey,
+  &__right-grey {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  &__left-green::before,
+  &__left-green::after,
+  &__right-green::after,
+  &__right-green::before,
+  &__left-grey::before,
+  &__left-grey::after,
+  &__right-grey::before,
+  &__right-grey::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 35%;
+    height: 1px;
+
+    background: @corpColor;
+
+    transition: 0.5s;;
+  }
+  &__left-grey::before,
+  &__left-grey::after,
+  &__right-grey::before,
+  &__right-grey::after {
+    z-index: 20;
+
+    background: @lightTextColor;
+  }
+  &__left-green::before,
+  &__left-green::after,
+  &__right-green::before,
+  &__right-green::after {
+    transition-delay: 0.4s;
+  }
+  &__left-green::after,
+  &__left-grey::after {
+    width: 1px;
+    height: 50%;
+  }
+  &__right-green::after,
+  &__right-green::before,
+  &__right-grey::after,
+  &__right-grey::before {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: auto;
+  }
+  &__right-green::after,
+  &__right-grey::after {
+    width: 1px;
+    height: 50%;
+  }
+  &__left-green::before {
+    transform: translateX(-62px);
+  }
+  &__right-green::before {
+    transform: translateX(62px);
+  }
+  &__left-green::after {
+    transform: translateY(-30px);
+  }
+  &__right-green::after {
+    transform: translateY(30px);
+  }
+  &:hover &__left-green::before,
+  &:hover &__right-green::before,
+  &:hover &__left-green::after,
+  &:hover &__right-green::after {
+    transform: none;
+
+    transition-delay: 0.4s;
+  }
+  &:hover &__left-grey::before {
+    transform: translateX(-62px);
+  }
+  &:hover &__right-grey::before {
+    transform: translateX(62px);
+  }
+  &:hover &__left-grey::after {
+    transform: translateY(-30px);
+  }
+  &:hover &__right-grey::after {
+    transform: translateY(30px);
+  }
+  & a {
+    position: relative;
+    z-index: 10;
+
+    transition: 0.5s;
+  }
+}
