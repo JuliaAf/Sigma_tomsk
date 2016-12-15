@@ -1,5 +1,5 @@
 .footer {
-  padding: 20px 0;
+  padding-bottom: 20px;
   & .wrapper {
     display: flex;
     flex-flow: row nowrap;
@@ -25,5 +25,92 @@
     align-items: center;
     box-sizing: border-box;
     padding: 0 30px;
+  }
+}
+@media @lg {
+  .footer {
+    &__copy {
+      flex-basis: 30%;
+    }
+    &__contacts {
+      flex-basis: 40%;
+    }
+    &__developer {
+      flex-basis: 30%;
+    }
+  }
+}
+@media @md {
+  .footer {
+    font-size: 13px;
+    &__copy {
+      padding-right: 15px;
+    }
+    &__contacts {
+      padding: 0 15px;
+    }
+    &__developer {
+      padding-left: 15px;
+    }
+  }
+}
+@media @sm {
+  .footer {
+    &__copy {
+      flex-basis: 25%;
+
+      text-align: left;
+    }
+    &__contacts {
+      flex-basis: 50%;
+    }
+    &__developer {
+      flex-basis: 25%;
+
+      text-align: right;
+    }
+    &__copy,
+    &__contacts,
+    &__developer {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    &__contacts a:first-child {
+      text-align: left;
+    }
+    &__contacts a:last-child {
+      text-align: right;
+      white-space: nowrap;
+    }
+    &__developer {
+      padding-top: 9px;
+    }
+  }
+}
+@media @xs {
+  .footer {
+    & .wrapper {
+      flex-wrap: wrap;
+    }
+    &__copy {
+      flex-basis: 50%;
+      order: 2;
+    }
+    &__contacts {
+      flex-basis: 100%;
+      order: 1;
+      margin-bottom: 10px;
+    }
+    &__developer {
+      flex-basis: 50%;
+      order: 3;
+    }
+    &__copy,
+    &__contacts,
+    &__developer {
+      padding: 0;
+
+      border: 0;
+    }
   }
 }

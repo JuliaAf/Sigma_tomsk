@@ -78,18 +78,19 @@
 
       -ms-backface-visibility: hidden;
 }
-.owl-pagination {
+
+.owl-controls {
   position: absolute;
-  bottom: 40px;
+  bottom: 2.5em;
   left: 50%;
 
-  transfrom: translateX(-50%);
+  transform: translateX(-50%);
 }
 .owl-page {
   display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-right: 15px;
+  width: 0.9375em;
+  height: 0.9375em;
+  margin-right: 0.9375em;
 
   border: 1px solid @corpColor;
   border-radius: 50%;
@@ -97,7 +98,9 @@
 .owl-page.active {
   background: @corpColor;
 }
-.owl-controls {
-  width: 100px;
-  height: 20px;
+@media @sm {
+  .owl-controls {
+    position: absolute;
+    bottom: 1em;
+  }
 }

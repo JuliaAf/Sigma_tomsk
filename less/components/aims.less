@@ -1,21 +1,11 @@
 .aims {
   position: relative;
 
+  margin-bottom: 110px;
+
   background: url(../img/tomsk-nano-building.jpg);
   background-repeat: no-repeat;
   background-position: right 73%;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    top: 10px;
-    left: 0;
-
-    width: 240px;
-    height: 1px;
-
-    background: @lightTextColor;
-  }
   &::after {
     content: "";
     position: absolute;
@@ -28,15 +18,26 @@
 
     background: @corpColor;
   }
-
   &__title {
-    margin-bottom: 70px;
+    position: relative;
+  }
+  &__title::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -480px;
+
+    width: 400px;
+    height: 1px;
+
+    background: @lightTextColor;
   }
   &__title span {
     color: @corpColor;
   }
   &__intro {
     display: block;
+    width: 90%;
     margin-bottom: 75px;
   }
   &__list {
@@ -57,15 +58,15 @@
     box-sizing: border-box;
   }
   &__list li:last-child {
-    flex-basis: 100%;
+    flex-basis: 100% !important;
     box-sizing: border-box;
+    margin-bottom: 0;
   }
   &__list li svg {
     display: inline-block;
-    flex-basis: 56px !important;
-    width: 56px !important;
+    width: 56px;
     height: 56px;
-    margin-right: 35px;
+    margin-right: 2.18em;
 
     vertical-align: top;
   }
@@ -78,6 +79,7 @@
 
     line-height: 24px;
     vertical-align: middle;
+    color: @darkTextColor;
   }
   &__list li:nth-child(even) p {
     width: 80%;
@@ -112,5 +114,115 @@
   }
   &__list li:nth-child(5) p::before {
     content: "05";
+  }
+}
+@media (max-width:1780px) {
+  .aims {
+    &__list {
+      width: 70%;
+    }
+    &__list li:nth-child(odd) {
+      flex-basis: 35%;
+    }
+  }
+}
+@media (max-width:1500px) {
+  .aims {
+    background-position: right 52%;
+    background-size: 33%;
+    &__intro {
+      width: 80%;
+    }
+    &__list {
+      width: 65%;
+    }
+    &__list li:nth-child(odd) {
+      flex-basis: 40%;
+    }
+    &__list li:nth-child(even) p {
+      width: 70%;
+    }
+  }
+}
+@media (max-width:1340px) {
+  .aims {
+    background-position: right 43%;
+    background-size: 33%;
+    &::after {
+      width: 195px;
+    }
+    &__list {
+      width: 60%;
+    }
+    &__list li:nth-child(even) {
+      flex-basis: 50%;
+    }
+  }
+}
+@media @lg {
+  .aims {
+    background-position: right 39%;
+    &__title::before {
+      display: none;
+    }
+    &__list li:nth-child(odd) {
+      flex-basis: 45%;
+    }
+    &__list li:nth-child(even) p {
+      width: 65%;
+    }
+    &__list li:nth-child(odd) p {
+      width: 62%;
+    }
+  }
+}
+@media @md {
+  .aims {
+    margin-bottom: 90px;
+
+    background-position: right 31%;
+    &::after {
+      top: 15%;
+
+      height: 50%;
+    }
+    &__list li:nth-child(odd),
+    &__list li:nth-child(even),
+    &__list li:last-child {
+      flex-basis: 100%;
+    }
+    &__list li:nth-child(odd) p,
+    &__list li:nth-child(even) p,
+    &__list li:last-child p {
+      width: 70%;
+    }
+  }
+}
+@media @sm {
+  .aims {
+    background: none;
+    &::after {
+      display: none;
+    }
+    &__title {
+      line-height: 1.2em;
+      text-align: center;
+    }
+    &__intro {
+      width: 100%;
+    }
+    &__list {
+      width: 100%;
+    }
+  }
+}
+@media @xs {
+  .aims {
+    &__intro {
+      margin-bottom: 50px;
+    }
+    &__list li {
+      margin-bottom: 50px;
+    }
   }
 }

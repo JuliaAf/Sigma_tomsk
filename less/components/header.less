@@ -8,6 +8,7 @@
   }
   &__logo {
     flex-basis: 15%;
+    padding-right: 30px;
 
     border-right: 1px solid @lightTextColor;
   }
@@ -23,10 +24,14 @@
     border-right: 1px solid @lightTextColor;
   }
   &__nav {
+    z-index: 20;
+
     flex-basis: 50%;
     padding-left: 30px;
 
     text-align: center;
+
+    background: rgba(255,255,255,0.9);
   }
   &__nav ul {
     display: flex;
@@ -38,5 +43,88 @@
   }
   &__nav a.active {
     color: @corpColor;
+  }
+  &__open-toggle {
+    display: none;
+  }
+}
+@media @lg {
+  .header {
+    &__contacts {
+      flex-basis: 20%;
+      flex-direction: column;
+
+      line-height: 25px;
+    }
+    &__nav {
+      flex-basis: 65%;
+    }
+  }
+}
+@media(max-width:925px) {
+  .header {
+    &__logo {
+      padding-right: 15px;
+    }
+    &__nav {
+      padding-left: 15px;
+
+      font-size: 14px;
+    }
+    &__contacts {
+      padding: 0 15px;
+
+      font-size: 13px;
+    }
+  }
+}
+@media @sm {
+  .header {
+    & .wrapper {
+      position: relative;
+    }
+    &__contacts {
+      flex-grow: 1;
+
+      text-align: left;
+
+      border: 0;
+    }
+    &__nav {
+      position: absolute;
+      top: 55px;
+      left: 0;
+
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0;
+    }
+    &__nav ul {
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+    }
+    &__nav ul li {
+      width: 100%;
+    }
+    &__nav a {
+      display: block;
+      width: 100%;
+      padding: 15px 0;
+
+      border-bottom: 1px solid @lightTextColor;
+    }
+    &__open-toggle {
+      position: absolute;
+      top: 12px;
+      right: 15px;
+
+      display: block;
+
+      font-size: 30px;
+    }
   }
 }

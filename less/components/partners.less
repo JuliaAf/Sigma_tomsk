@@ -11,6 +11,29 @@
     text-align: center;
   }
   &__list li {
-    flex-basis: 12%;
+    flex-basis: 15%;
+  }
+  & img {
+    max-width: 100%;
+  }
+}
+@media @md {
+  .partners {
+    margin-bottom: 90px;
+    &__list {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width:500px) {
+  .partners {
+    &__list {
+      flex-direction: column;;
+    }
+    &__list li {
+      flex-basis: 35%;
+      margin-bottom: 20px;
+    }
   }
 }
