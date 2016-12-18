@@ -61,6 +61,11 @@
 
     color: #191919;
   }
+  &__item a:hover  h4 {
+    color: @corpColor;
+
+    transition: 0.5s;
+  }
 }
 @media @md {
   .news {
@@ -83,7 +88,7 @@
       bottom: 0;
     }
     &__list {
-      display:block;
+      display: block;
       // flex-flow: column wrap;
     }
     &__item {
