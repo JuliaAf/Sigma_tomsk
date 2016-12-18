@@ -2054,6 +2054,7 @@ textarea:focus {
 }
 .header__open-toggle {
   display: none;
+  cursor: pointer;
 }
 @media (max-width:1200px) {
   .header__contacts {
@@ -2121,7 +2122,7 @@ textarea:focus {
   }
   .header__open-toggle {
     position: absolute;
-    top: 12px;
+    top: 3px;
     right: 15px;
     display: block;
     font-size: 30px;
@@ -2143,6 +2144,7 @@ textarea:focus {
 .aims {
   position: relative;
   margin-bottom: 110px;
+  overflow: hidden;
 }
 .aims__bg-block {
   content: "";

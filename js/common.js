@@ -34,9 +34,6 @@ $(document).ready(function() {
     )
     wow.init();
 
-
-  $(".aims::after").addClass("wow slideInLeft");
-
   /*owl-carousel*/
   $(".index-carousel").owlCarousel({
 
@@ -97,7 +94,7 @@ $(document).ready(function() {
 
   /*mobile nav*/
   $(".header__open-toggle").click(function(){
-    $(".header__nav").slideToggle();
+    $(".header__nav").slideToggle().css({"border-top":"1px solid #8a8a8a"});
   })
 
 });//ready-end
