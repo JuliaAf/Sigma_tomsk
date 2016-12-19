@@ -18,13 +18,30 @@
   &__contacts {
     border-right: 1px solid @lightTextColor;
   }
+  &__copy {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+  }
   &__contacts {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    padding: 0 30px;
+    padding: 0 20px;
+  }
+  &__developer {
+    padding-left: 20px;
+  }
+  &__developer a {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  &__developer span {
+    display: inline-block;
+    margin-right: 10px;
   }
 }
 @media @lg {
@@ -44,12 +61,15 @@
   .footer {
     font-size: 13px;
     &__copy {
+      flex-basis: 25%;
       padding-right: 15px;
     }
     &__contacts {
+      flex-basis: 50%;
       padding: 0 15px;
     }
     &__developer {
+      flex-basis: 25%;
       padding-left: 15px;
     }
   }
@@ -57,16 +77,10 @@
 @media @sm {
   .footer {
     &__copy {
-      flex-basis: 25%;
-
       text-align: left;
     }
-    &__contacts {
-      flex-basis: 50%;
-    }
-    &__developer {
-      flex-basis: 25%;
 
+    &__developer {
       text-align: right;
     }
     &__copy,
@@ -104,6 +118,9 @@
     &__developer {
       flex-basis: 50%;
       order: 3;
+    }
+    &__developer a {
+      justify-content: flex-end;
     }
     &__copy,
     &__contacts,

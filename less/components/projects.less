@@ -2,6 +2,7 @@
   position: relative;
 
   margin-bottom: 110px;
+  padding-bottom: 20px;
   overflow: hidden;
 
   & .wrapper {
@@ -76,8 +77,32 @@
     transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
   }
   &__item-img {
+    position: relative;
+
     flex-basis: 60%;
     padding-right: 60px;
+  }
+  &__item-img::before {
+    content: "";
+    position: absolute;
+    right: 50px;
+    bottom: -4px;
+
+    width: 60%;
+    height: 1px;
+
+    background: @corpColor;
+  }
+  &__item-img::after {
+    content: "";
+    position: absolute;
+    right: 50px;
+    bottom: -4px;
+
+    width: 1px;
+    height: 60%;
+
+    background: @corpColor;
   }
   &__item-img img {
     max-width: 100%;
@@ -191,6 +216,10 @@
     &__item-img {
       padding-right: 30px;
     }
+    &__item-img::before,
+    &__item-img::after {
+      right: 20px;
+    }
   }
 }
 @media @md {
@@ -208,6 +237,7 @@
     }
     &__item {
       flex-direction: column;
+      margin-right: 15px;
     }
     &__item-img {
       margin-bottom: 20px;

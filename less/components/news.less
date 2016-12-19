@@ -49,6 +49,54 @@
     flex-basis: 30%;
     flex-direction: column;
   }
+  &__item-img,
+  &__item-img-container {
+    position: relative;
+  }
+  &__item-img::before {
+    content: "";
+    position: absolute;
+    right: -10px;
+    bottom: -4px;
+
+    width: 45%;
+    height: 1px;
+
+    background: @corpColor;
+  }
+  &__item-img::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    bottom: -4px;
+
+    width: 1px;
+    height: 45%;
+
+    background: @corpColor;
+  }
+  &__item-img-container::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -10px;
+
+    width: 45%;
+    height: 1px;
+
+    background: @corpColor;
+  }
+  &__item-img-container::after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -10px;
+
+    width: 1px;
+    height: 45%;
+
+    background: @corpColor;
+  }
   &__item img {
     width: 100%;
     height: auto;
